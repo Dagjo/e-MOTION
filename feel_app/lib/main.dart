@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:feel_app/homeCard.dart';
+import 'package:feel_app/settingsCard.dart';
 
 void main() => runApp(new MyApp());
 
@@ -20,6 +22,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepOrange,
       ),
       home: new MyHomePage(title: 'Feel'),
+      routes: <String, WidgetBuilder> {
+        '/settings': (BuildContext context) => new SettingsCard(title: 'Feel settings'),
+      },
     );
   }
 }
@@ -44,6 +49,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  Widget _currentCard = new HomeCard();
 
   @override
   Widget build(BuildContext context) {
@@ -58,63 +64,20 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: new Text(widget.title),
+        actions: <Widget>[
+          new IconButton(
+              icon: new Icon(Icons.settings),
+              onPressed: _openSettings,
+          )
+        ],
       ),
-      body: new Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: new Column(
-          // Column is also layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug paint" (press "p" in the console where you ran
-          // "flutter run", or select "Toggle Debug Paint" from the Flutter tool
-          // window in IntelliJ) to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            new Text("How do you"),
-            new Text("Feel"),
-            new Center (
-              child: new Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  new Placeholder(
-                    color: Colors.black,
-                    fallbackHeight: 40.0,
-                    fallbackWidth: 40.0,
-                    strokeWidth: 3.0,
-                  ),
-                  new Placeholder(
-                    color: Colors.black,
-                    fallbackHeight: 40.0,
-                    fallbackWidth: 40.0,
-                    strokeWidth: 3.0,
-                  ),
-                  new Placeholder(
-                    color: Colors.black,
-                    fallbackHeight: 40.0,
-                    fallbackWidth: 40.0,
-                    strokeWidth: 3.0,
-                  ),
-                  new Placeholder(
-                    color: Colors.black,
-                    fallbackHeight: 40.0,
-                    fallbackWidth: 40.0,
-                    strokeWidth: 3.0,
-                  ),
-                ],
-              ),
-            ),
-            new Text("Today")
-          ],
-        ),
-      ),
+      body: _currentCard,
     );
+  }
+
+  void _openSettings() {
+    setState((){
+        Navigator.of(context).pushNamed("/settings");
+        });
   }
 }
