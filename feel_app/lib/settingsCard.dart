@@ -13,7 +13,7 @@ class SettingsCard extends StatelessWidget {
         title: new Text(title),
       ),
       body: new Center(
-        child: new Text("Please settings to this page"),
+        child: new Text("Place settings on this page"),
       )
     );
   }
