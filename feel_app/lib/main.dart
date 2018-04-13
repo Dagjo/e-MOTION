@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:feel_app/homeCard.dart';
 import 'package:feel_app/settingsCard.dart';
+import 'package:feel_app/BotNav.dart';
 
 void main() => runApp(new MyApp());
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         // counter didn't reset back to zero; the application is not restarted.
         primarySwatch: Colors.deepOrange,
       ),
-      home: new MyHomePage(title: 'Feel'),
+      home: new ScaffoldWithBottomNavigation(),
       routes: <String, WidgetBuilder> {
         '/settings': (BuildContext context) => new SettingsCard(title: 'Feel settings'),
       },
@@ -81,3 +82,4 @@ class _MyHomePageState extends State<MyHomePage> {
         });
   }
 }
+
