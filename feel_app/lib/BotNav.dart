@@ -70,6 +70,7 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
     icon: new Icon(Icons.chat),
     title: new Text("Contacts")
     ),
+
         ])
     );
   }
