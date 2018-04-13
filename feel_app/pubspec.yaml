@@ -32,10 +32,10 @@ flutter:
   assets:
     - graphics/bear1.png
     - graphics/bear2.png
-    - graphics/bear2.png
-    - graphics/bear2.png
+    - graphics/bear3.png
+    - graphics/bear4.png
 
-  # An image asset can refer to one or more resolution-specific "variants", see
+  # An image asset can  refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
 
   # For details regarding adding assets from package dependencies, see

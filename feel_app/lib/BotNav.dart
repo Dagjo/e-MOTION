@@ -10,7 +10,41 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
           title: new Text("Feel"),
         ),
         body: new Center(
-          child: new Text("How are you feeling today?"),
+          child: new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Text("How do you"),
+              new Text("Feel"),
+              new Center(
+                child: new Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    new Image (
+                        image: new AssetImage("graphics/bear1.png"),
+                      height: 48.0,
+                      width: 48.0
+                    ),
+                    new Image (
+                        image: new AssetImage("graphics/bear2.png"),
+                      height: 48.0,
+                      width: 48.0
+                    ),
+                    new Image (
+                        image: new AssetImage("graphics/bear3.png"),
+                      height: 48.0,
+                      width: 48.0
+                    ),
+                    new Image (
+                        image: new AssetImage("graphics/bear4.png"),
+                      height: 48.0,
+                      width: 48.0
+                    ),
+                  ],
+                ),
+              ),
+              new Text("Today?")
+            ],
+          )
         ),
         bottomNavigationBar:
         new BottomNavigationBar(
