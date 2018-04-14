@@ -1,8 +1,10 @@
 # Navigating between pages using Routes
 
-## Classes referenced in this document
-- Navigator
-- MaterialApp
+The classes (widgets) discussed in this document are:
+- [Navigator](https://docs.flutter.io/flutter/widgets/Navigator-class.html)
+- [MaterialApp](https://docs.flutter.io/flutter/material/MaterialApp-class.html)
+- [BuildContext](https://docs.flutter.io/flutter/widgets/BuildContext-class.html)
+- [WidgetBuilder](https://docs.flutter.io/flutter/widgets/WidgetBuilder.html)
 
 Our app consists of a number of different pages, each one providing a subset of the app's functionality. This means that the user has to be able to navigate to those pages, either explicitly, by directly selecting a page, or implicitly, as a result of some action.
 
@@ -27,4 +29,43 @@ It is the automatic reversing of the order that makes a stack useful for trackin
 
 This is the essence of the **Navigator** class provided by **flutter**. You navigate to a page by _pushing_ it onto the **Navigator**, and return to the previous page by _popping_ the current page from the **Navigator**. The current page is _always_ the page at the top of the Navigator's stack...
 
+## Using the Navigator widget
+The **Navigator** widget manages routes, so when we want to navigate to a page we have to **push** a route onto the **Navigator**. You can create route objects on the fly, but for our purposes it is simplest to reference them by name. The **MaterialApp** widget provides an easy way for us to manage our routes. _(recall our MyApp widget builds a **MaterialApp** widget as the root of our application)_
 
+```Dart
+new MaterialApp(
+  home: new HomePageWidget(),
+  routes: <String, WidgetBuilder> {
+    '/settings': (BuildContext context) => new SettingsPageWidget(),
+    '/anotherPage': (BuildContext context) => new AnotherPageWidget(),
+    // etc, etc.
+  },
+  // other property settings as required
+)
+```
+_Note that this is only to show the routes property of the MaterialApp widget, there are other properties that need to be set to successfully create a new instance of a MaterialApp widget._
+
+The **MaterialApp** widget allows for us to map the names of our routes to WidgetBuilder classes that can be used to create an instance of a page. The map is maintained in the **MaterialApp's _BuildContext_** _(not strictly speaking true, but good enough for now)_ and we can use the Navigator.of(context) method to obtain a Navigator that knows the routes we added to the **MaterialApp**. 
+
+By default the **MaterialApp** also adds the _home_ widget to the _routes_ as '/', so there are actually two routes: 
+1. '/' which references the HomePageWidget
+2. '/settings' which references the SettingsPageWidget 
+
+So, to navigate from the home page to the settings page we can use the **Navigator** like this:
+```
+Navigator.of(context).pushNamed('/settings')
+```
+
+And to return to the home page:
+```
+Navigator.of(context).pop()
+```
+
+The **flutter** framework takes care of creating the widgets for the routes using the **WidgetBuilder** instances we mapped to the routes in the **MaterialApp**, and of binding the 'back' button to popping the current page off the **Navigator**.
+
+Remember that the **Navigator** maintains a stack of the pages we create. If instead of popping the settings page to return to the home page, we pushed the '/' route, there would be three pages in the **Navigator**: 
+- home
+- settings
+- home
+
+and pushing the 'back' button would bring us back to the settings page, which might not be the behaviour we want. So be cognizant of when to push and when to pop.
