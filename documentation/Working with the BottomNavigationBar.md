@@ -1,16 +1,22 @@
 # Working with the BottomNavigationBar
 
-The [BottomNavigationBar](https://docs.flutter.io/flutter/material/BottomNavigationBar-class.html) is a widget that represents a bar with icons, and text, that should be used to navigate to other pages of your app.
-Usually you would use a **BottomNavigationBar** in conjunction with a [Scaffold](https://docs.flutter.io/flutter/material/Scaffold-class.html) widget, since the **Scaffold** widget provides support for positioning the bar on the page.
+The classes (widgets) discussed in this document are:
+- [BottomNavigationBar](https://docs.flutter.io/flutter/material/BottomNavigationBar-class.html)
+- [Scaffold](https://docs.flutter.io/flutter/material/Scaffold-class.html)
+- [BottomNavigationBarItem](https://docs.flutter.io/flutter/widgets/BottomNavigationBarItem-class.html)
+- [Icons](https://docs.flutter.io/flutter/material/Icons-class.html)
+
+The **BottomNavigationBar** is a widget that represents a bar with icons, and text, that should be used to navigate to other pages of your app.
+Usually you would use a **BottomNavigationBar** in conjunction with a **Scaffold** widget, since the **Scaffold** widget provides support for positioning the bar on the page.
 
 There are a couple of things to be aware of when using the **BottomNavigationBar**:
-1. It requires at least two [BottomNavigationBarItem](https://docs.flutter.io/flutter/widgets/BottomNavigationBarItem-class.html) widgets to function, less than two and you will see errors on your screen.
+1. It requires at least two **BottomNavigationBarItem** widgets to function, less than two and you will see errors on your screen.
 2. **BottomNavigationBarItems** must have both an _icon_ widget, and a _title_ widget. If you only provide one or the other you will get errors.
 
 ## The BottomNavigationBarItem
-A [BottomNavigationBarItem](https://docs.flutter.io/flutter/widgets/BottomNavigationBarItem-class.html) is simply a widget that represents something to display on the **BottomNavigationBar** for the user to click on so initiate a navigation to another page. As such is requires only an icon and a title to display.
+A **BottomNavigationBarItem** is simply a widget that represents something to display on the **BottomNavigationBar** for the user to click on so initiate a navigation to another page. As such is requires only an icon and a title to display.
 
-Flutter provides an enormous set of standard icons for use in your app, you reference them from the [Icons](https://docs.flutter.io/flutter/material/Icons-class.html) class, e.g. **Icons.home** or **Icons.people**. For our purposes we should be able to use standard icons for now.
+Flutter provides an enormous set of standard icons for use in your app, you reference them from the **Icons** class, e.g. [Icons.home](https://docs.flutter.io/flutter/material/Icons/home-constant.html) or [Icons.people](https://docs.flutter.io/flutter/material/Icons/people-constant.html). For our purposes we should be able to use standard icons for now.
 
 So, when we create a **BottomNavigationBarItem** it will look something like this:
 
