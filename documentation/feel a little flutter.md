@@ -130,7 +130,9 @@ MyApp
 ```
 
 This layout is probably a bit more efficient, however it is a little more complicated on the coding side as it requires us to maintain the AppBar and BottomNavigationBar state globally rather than as part of each main page.
+
 Deciding on trade-offs like that is a common thing when programming. Simple code is easier to code and maintain, but perhaps not as efficient. Efficient code may be more performant, but may have more bugs and be harder to work with in the long run.
+
 As a rule of thumb I like to start with simple, then make things more efficient if necessary.
  
  
