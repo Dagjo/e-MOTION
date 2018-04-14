@@ -8,7 +8,7 @@ Or more specifically for software purposes as:
 
 
 In **flutter** our application will consist of a top level widget that represents the foundation of the app.
-By default this widget is defined in the main.dart file when you create a new **flutter** project, and is called **MyApp**.
+By default this widget is defined in the _main.dart_ file when you create a new **flutter** project, and is called **MyApp**.
 
 **MyApp** is considered the root of your application since the rest of the app 'grows' like a tree from this one widget.
 
