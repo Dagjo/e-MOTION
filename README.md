@@ -6,3 +6,4 @@ _by **e\*MOTION**_
 ## Documentation
 - [An introduction to the _flutter_ framework](documentation/feel_a_little_flutter.md)
 - [Working with the BottomNavigationBar widget](documentation/Working_with_the_BottomNavigationBar.md)
+- [Navigating between pages](documentation/Navigating_between_pages.md)
