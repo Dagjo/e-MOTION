@@ -69,3 +69,13 @@ Remember that the **Navigator** maintains a stack of the pages we create. If ins
 - home
 
 and pushing the 'back' button would bring us back to the settings page, which might not be the behaviour we want. So be cognizant of when to push and when to pop.
+
+## Using routes with the BottomNavigationBar
+Since we're providing navigation between the main pages of the app through the **BottomNavigationBar** the default behaviour of pushing and popping routes with the **Navigator** may not provide the expected results. The **Navigator** has some additional methods that manipulate the stack a bit differently. A few exmples are:
+- [pushReplacementNamed](https://docs.flutter.io/flutter/widgets/Navigator/pushReplacementNamed.html): replaces the route at the top of the stack with the one being pushed.
+- [popUntil](https://docs.flutter.io/flutter/widgets/Navigator/popUntil.html): pops routes of the stack until it finds one that matches the conditions given. The routes that are popped are not navigated to, so they are not displayed.
+- [pushNamedAndRemoveUntil](https://docs.flutter.io/flutter/widgets/Navigator/pushNamedAndRemoveUntil.html): pushes a new route onto the stack, and then removes routes below it until it finds one that matches the conditions given.
+
+There are a few more like these, and it is worth looking at them so you know what your options are.
+
+For the **BottomNavigationBar** I suspect the _pushReplacementNamed_ method will be appropriate.
