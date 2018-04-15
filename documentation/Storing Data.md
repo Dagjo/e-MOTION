@@ -1,5 +1,5 @@
 # Storing Data
-For our app we will be storing data in a database, locally on the phone for now, though in future on a server. Android supports a relational database called [SQLite](https://www.sqlite.org/index.html), which as the name implies is a SQL database (SQL is generally pronounced as _see-quel_). For now there is no need to understand the internals of how a relational database works, it's an area of study unto itself, we will treat it as a black box. 
+For our app we will be storing data in a database, locally on the phone for now, though in future on a server. Android supports a relational database called [SQLite](https://www.sqlite.org/index.html), which as the name implies is a SQL database (SQL is generally pronounced as _see-quell_). For now there is no need to understand the internals of how a relational database works, it's an area of study unto itself, we will treat it as a black box. 
 > black box: any complex piece of equipment, typically a unit in an electronic system, with contents that are mysterious to the user.
 
 SQL is an acronym for **_Structured Query Language_**, a SQL database is one that 'understands' SQL. If we want to put data into the database, or read data from the database, we have to do it using commands written in SQL. For our app we only need to use some of the basic SQL features:
@@ -8,7 +8,7 @@ SQL is an acronym for **_Structured Query Language_**, a SQL database is one tha
 - read one, or more, records from the database
 - delete one, or more, records from the database
 
-_A record is a cohesive set of data that is stored as a unit in the database._
+_**A record is a cohesive set of data that is stored as a unit in the database.**_
 
 The database has to know what a record looks like before it can store it, a **database schema** defines the records and where they should be stored. In SQL the place where a record should be stored is called a **Table**. Tables are simple structures, they consist of **rows** and **columns**. The columns define the fields of the record, the rows contain the data for the fields. A table for storing the name and birth date of a person might look like this:
 
