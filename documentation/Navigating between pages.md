@@ -12,7 +12,7 @@ When there are few pages it is relatively simple to keep track of them in the co
 
 **Flutter** has some classes and infrastructure to make basic navigation simple. The key to the system is a stack. Stacks are simple, intuitive, Last-In-First-Out (LIFO) data structures (or if you prefer First-In-Last-Out). This means that the last item added to the stack is the first one available from the stack (or the first one you put in is the last one available).
 
-_By comparison queues are First-In-First-Out (FIFO) data structures
+_By comparison queues are First-In-First-Out (FIFO) data structures_
 
 Stacks are not a new idea, people have used stacks instinctively in their everyday lives for a long, long, time. They are great for reversing the order you took things appart in :)
 
