@@ -48,14 +48,17 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
         ),
         bottomNavigationBar:
         new BottomNavigationBar(
+          currentIndex: 0,
           type: BottomNavigationBarType.fixed,
             items: <BottomNavigationBarItem>[
           new BottomNavigationBarItem (
-            icon: new Icon(Icons.home),
+            icon: new IconButton(icon: new Icon(Icons.home),
+        onPressed: () => Navigator.of(context).pushNamed("/")),
             title: new Text("Home")
         ),
     new BottomNavigationBarItem (
-    icon: new Icon(Icons.book),
+    icon: new IconButton(icon: new Icon (Icons.book),
+        onPressed: () => Navigator.of(context).pushNamed("/journalling")),
     title: new Text("Journal")
     ),
     new BottomNavigationBarItem (

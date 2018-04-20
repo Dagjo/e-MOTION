@@ -3,6 +3,8 @@ import 'package:feel_app/homeCard.dart';
 import 'package:feel_app/settingsCard.dart';
 import 'package:feel_app/BotNav.dart';
 import 'package:feel_app/theme.dart';
+import 'package:feel_app/journalling.dart';
+import 'package:feel_app/tracking.dart';
 
 
 void main() => runApp(new MyApp());
@@ -17,6 +19,8 @@ class MyApp extends StatelessWidget {
       home: new ScaffoldWithBottomNavigation(),
       routes: <String, WidgetBuilder> {
         '/settings': (BuildContext context) => new SettingsCard(title: 'Feel settings'),
+        '/journalling': (BuildContext context) => new JournallingWidget(),
+        '/tracking': (BuildContext context) => new TrackingWidget(),
       },
     );
   }
