@@ -10,7 +10,9 @@ class HomeCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           new Text("How do you"),
-          new Text("Feel"),
+          new Text('Feel',
+          style: new TextStyle(fontFamily: 'Dosis'),
+          ),
           new Center(
             child: new Row(
               mainAxisAlignment: MainAxisAlignment.center,
