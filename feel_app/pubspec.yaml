@@ -63,12 +63,12 @@ flutter:
   fonts:
     - family: Dosis
       fonts:
-        - asset: fonts/Dosis-Bold.otf
-        - asset: fonts/Dosis-Medium.otf
-        - asset: fonts/Dosis-Regular.otf
-        - asset: fonts/Dosis-SemiBold.otf
-        - asset: fonts/Dosis-Light.otf
-        - asset: fonts/Dosis-ExtraBold.otf
-        - asset: fonts/Dosis-ExtraLight.otf
-        weight: 400
-        style: normal
+        - asset: fonts/Dosis-Bold.ttf
+        - asset: fonts/Dosis-Medium.ttf
+        - asset: fonts/Dosis-Regular.ttf
+        - asset: fonts/Dosis-SemiBold.ttf
+        - asset: fonts/Dosis-Light.ttf
+        - asset: fonts/Dosis-ExtraBold.ttf
+        - asset: fonts/Dosis-ExtraLight.ttf
+          style: normal
+          weight: 400
