@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 class HomeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Center(
+
+     return new Center(
       child: new Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -14,17 +16,18 @@ class HomeCard extends StatelessWidget {
             child: new Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                new Image (
-                  image: new AssetImage("graphics/bear1.png")
+                new RaisedButton (
+                  child: new Image(image: new AssetImage("graphics/bear1.png")),
+                  onPressed: onImagePressed(context),
                 ),
-                new Image (
-                  image: new AssetImage("graphics/bear2.png")
+                new RaisedButton (
+                child: new Image(image: new AssetImage("graphics/bear2.png"))
                 ),
-                new Image (
-                  image: new AssetImage("graphics/bear3.png")
+                new RaisedButton (
+                child: new Image(image: new AssetImage("graphics/bear3.png"))
                 ),
-                new Image (
-                  image: new AssetImage("graphics/bear4.png")
+                new RaisedButton (
+                child: new Image(image: new AssetImage("graphics/bear4.png"))
                 ),
               ],
             ),
@@ -34,4 +37,11 @@ class HomeCard extends StatelessWidget {
       ),
     );
   }
+
+  onImagePressed(BuildContext context) {
+    showDialog(context: context,
+        child: new AlertDialog(title: new Text("Image Pressed")));
+  }
+
+
 }

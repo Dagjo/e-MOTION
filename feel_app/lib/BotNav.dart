@@ -20,24 +20,24 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     new Image (
-                        image: new AssetImage("graphics/bear1.png"),
-                      height: 48.0,
-                      width: 48.0
+                      image: new AssetImage("graphics/bear1.png"),
+                      height: 75.0,
+                      width: 75.0,
                     ),
                     new Image (
                         image: new AssetImage("graphics/bear2.png"),
-                      height: 48.0,
-                      width: 48.0
+                      height: 75.0,
+                      width: 75.0,
                     ),
                     new Image (
                         image: new AssetImage("graphics/bear3.png"),
-                      height: 48.0,
-                      width: 48.0
+                      height: 75.0,
+                      width: 75.0,
                     ),
                     new Image (
                         image: new AssetImage("graphics/bear4.png"),
-                      height: 48.0,
-                      width: 48.0
+                      height: 75.0,
+                      width: 75.0,
                     ),
                   ],
                 ),
@@ -77,4 +77,10 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
         ])
     );
   }
+
+  onImagePressed(BuildContext context) {
+    showDialog(context: context,
+        child: new AlertDialog(title: new Text("Image Pressed")));
+  }
+
 }
