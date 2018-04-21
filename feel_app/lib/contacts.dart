@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TrackingWidget extends StatelessWidget {
+class ContactsWidget extends StatelessWidget {
 
 
   @override
@@ -10,19 +10,22 @@ class TrackingWidget extends StatelessWidget {
           title: new Text("Feel"),
         ),
         body: new Center(
-            child: new Text("This is for tracking")
+          child: new Text("Your contacts"),
         ),
         bottomNavigationBar:
         new BottomNavigationBar(
-            currentIndex:2,
+            currentIndex: 4,
             type: BottomNavigationBarType.fixed,
             items: <BottomNavigationBarItem>[
               new BottomNavigationBarItem (
-                  icon: new Icon(Icons.home),
+                  icon: new IconButton(icon: new Icon(Icons.home),
+                      onPressed: () => Navigator.of(context).pushNamed("/")),
                   title: new Text("Home")
               ),
               new BottomNavigationBarItem (
-                  icon: new Icon(Icons.book),
+                  icon: new IconButton(icon: new Icon (Icons.book),
+                      onPressed: () =>
+                          Navigator.of(context).pushNamed("/journalling")),
                   title: new Text("Journal")
               ),
               new BottomNavigationBarItem (
