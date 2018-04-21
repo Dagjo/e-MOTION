@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:feel_app/feel_navigation_bar.dart';
 
 class TrackingWidget extends StatelessWidget {
 
@@ -12,33 +13,7 @@ class TrackingWidget extends StatelessWidget {
         body: new Center(
             child: new Text("This is for tracking")
         ),
-        bottomNavigationBar:
-        new BottomNavigationBar(
-            currentIndex:2,
-            type: BottomNavigationBarType.fixed,
-            items: <BottomNavigationBarItem>[
-              new BottomNavigationBarItem (
-                  icon: new Icon(Icons.home),
-                  title: new Text("Home")
-              ),
-              new BottomNavigationBarItem (
-                  icon: new Icon(Icons.book),
-                  title: new Text("Journal")
-              ),
-              new BottomNavigationBarItem (
-                  icon: new Icon(Icons.favorite),
-                  title: new Text("Tracking")
-              ),
-              new BottomNavigationBarItem (
-                  icon: new Icon(Icons.healing),
-                  title: new Text("Med")
-              ),
-              new BottomNavigationBarItem (
-                  icon: new Icon(Icons.chat),
-                  title: new Text("Contacts")
-              ),
-
-            ])
-    );
+        bottomNavigationBar: new FeelNavigationBar (currentIndex: 2)
+            );
   }
 }

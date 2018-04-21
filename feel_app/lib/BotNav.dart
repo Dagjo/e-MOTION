@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:feel_app/feel_navigation_bar.dart';
 
 class ScaffoldWithBottomNavigation extends StatelessWidget {
 
@@ -46,39 +47,7 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
             ],
           )
         ),
-        bottomNavigationBar:
-        new BottomNavigationBar(
-          currentIndex: 0,
-          type: BottomNavigationBarType.fixed,
-            items: <BottomNavigationBarItem>[
-          new BottomNavigationBarItem (
-            icon: new IconButton(icon: new Icon(Icons.home),
-        onPressed: () => Navigator.of(context).pushNamed("/")),
-            title: new Text("Home")
-        ),
-    new BottomNavigationBarItem (
-    icon: new IconButton(icon: new Icon (Icons.book),
-        onPressed: () => Navigator.of(context).pushNamed("/journalling")),
-    title: new Text("Journal")
-    ),
-    new BottomNavigationBarItem (
-    icon: new IconButton(icon: new Icon (Icons.favorite),
-    onPressed: () => Navigator.of(context).pushNamed("/tracking")),
-    title: new Text("Tracking")
-    ),
-    new BottomNavigationBarItem (
-    icon: new IconButton(icon: new Icon (Icons.healing),
-    onPressed: () => Navigator.of(context).pushNamed("/medication"),),
-    title: new Text("Med")
-    ),
-    new BottomNavigationBarItem (
-    icon: new IconButton(icon: new Icon (Icons.chat),
-    onPressed: () => Navigator.of(context).pushNamed ("/contacts")),
-    title: new Text("Contacts")
-
-    ),
-
-        ])
+        bottomNavigationBar: new FeelNavigationBar (currentIndex: 0)
     );
   }
 
