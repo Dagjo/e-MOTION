@@ -60,3 +60,15 @@ flutter:
   #
   # For details regarding fonts from package dependencies, 
   # see https://flutter.io/custom-fonts/#from-packages
+  fonts:
+    - family: Dosis
+      fonts:
+        - asset: fonts/Dosis-Bold.otf
+        - asset: fonts/Dosis-Medium.otf
+        - asset: fonts/Dosis-Regular.otf
+        - asset: fonts/Dosis-SemiBold.otf
+        - asset: fonts/Dosis-Light.otf
+        - asset: fonts/Dosis-ExtraBold.otf
+        - asset: fonts/Dosis-ExtraLight.otf
+        weight: 400
+        style: normal
