@@ -1,15 +1,15 @@
-/// A class representing an individual journal entry
+ /// A class representing an individual journal entry
 class JournalEntry {
   DateTime _created;
   String _body;
 
   JournalEntry(String body, {DateTime created}) {
-    _created = created != null ? created : DateTime.now();
+    _created = created != null ? created : new DateTime.now();
     _body = body;
   }
 
   JournalEntry.fromMap(Map map) {
-    _created = DateTime.fromMillisecondsSinceEpoch(map["Created"], isUtc: true);
+    _created = new DateTime.fromMillisecondsSinceEpoch(map["Created"], isUtc: true);
     _body = map["Body"];
   }
 
