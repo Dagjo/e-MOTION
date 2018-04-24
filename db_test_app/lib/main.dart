@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<JournalEntry> _journalEntries = new List<JournalEntry>();
 
   _MyHomePageState() {
-    _dataSource = FeelDataSource();
+    _dataSource = new FeelDataSource();
     _dataSource.getJournalEntries().then((entries) {
       setState(() {
         _journalEntries = entries != null ? entries : new List<JournalEntry>();

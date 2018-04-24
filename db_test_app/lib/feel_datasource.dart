@@ -20,7 +20,7 @@ class FeelDataSource {
       _databasePath = join(documentsDirectory.path, "feel.db");
     }
 
-    FeelDatabase feelDatabase = FeelDatabase(_databasePath);
+    FeelDatabase feelDatabase = new FeelDatabase(_databasePath);
     await feelDatabase.open();
     return feelDatabase;
   }
@@ -37,7 +37,7 @@ class FeelDataSource {
 
       List<JournalEntry> list = new List<JournalEntry>();
       for(Map entry in entries)
-        list.add(JournalEntry.fromMap(entry));
+        list.add(new JournalEntry.fromMap(entry));
       return list;
     }
     catch (e) {
