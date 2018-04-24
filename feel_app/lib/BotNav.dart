@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:feel_app/feel_navigation_bar.dart';
-
+import 'theme.dart';
 class ScaffoldWithBottomNavigation extends StatelessWidget {
 
 
@@ -8,14 +8,19 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text("Feel"),
+          title: new Text("Feel")
         ),
         body: new Center(
           child: new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Text("How do you"),
-              new Text("Feel"),
+              new Text('Feel',
+              style: new TextStyle(
+                  fontFamily: 'Dosis',
+              fontSize:32.0,
+              fontWeight: FontWeight.bold,
+              color: FeelColors.peach[900])),
               new Center(
                 child: new Row(
                   mainAxisAlignment: MainAxisAlignment.center,

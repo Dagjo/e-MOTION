@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         '/medication': (BuildContext context) => new MedicationWidget(),
         '/contacts': (BuildContext context) => new ContactsWidget(),
 
+
       },
     );
   }

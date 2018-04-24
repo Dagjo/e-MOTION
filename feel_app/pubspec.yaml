@@ -70,5 +70,6 @@ flutter:
         - asset: fonts/Dosis-Light.ttf
         - asset: fonts/Dosis-ExtraBold.ttf
         - asset: fonts/Dosis-ExtraLight.ttf
-          style: normal
-          weight: 400
+          style: italic
+          weight: 700
+
