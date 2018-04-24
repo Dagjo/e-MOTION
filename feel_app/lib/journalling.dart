@@ -18,7 +18,7 @@ class JournallingWidget extends StatelessWidget {
             if (index == 2)
               return createCard (asset: "graphics/bear2.png", title: "09-12-17", subtitle: "Today was better, I sat with a new kid and now we're friends.");
             if (index == 3)
-              return createCard (asset: "graphics/bear3.png", title: "09-10-17", subtitle: "Today was alright, no one punced me and I'm allowed back in school.");
+              return createCard (asset: "graphics/bear3.png", title: "09-10-17", subtitle: "Today was alright, no one punched me and I'm allowed back in school.");
             if (index == 4)
               return createCard (asset: "graphics/bear3.png", title: "09-08-17", subtitle: "Today was a bad day. A bully punched me in the nose. I punched him back. Got suspended.");
             if (index == 5)
