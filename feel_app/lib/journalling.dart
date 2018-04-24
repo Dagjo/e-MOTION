@@ -47,7 +47,7 @@ class JournallingWidget extends StatelessWidget {
                             icon: new Icon(Icons.create),
                         ),
                         new IconButton(
-                          icon: new Icon(Icons.delete)
+                          icon: new Icon(Icons.delete),
                         ),
                       ]
                   ))
