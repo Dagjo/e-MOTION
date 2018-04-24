@@ -42,7 +42,8 @@ class ContactsWidget extends StatelessWidget {
                         fontSize:20.0,
                         fontWeight: FontWeight.bold,
                         color: FeelColors.peach[700])),
-                new Text("1-877-303-2642 (24/7)"),
+                new FlatButton(onPressed: () => {}, child:
+                new Text("1-877-303-2642 (24/7)")),
                 new Text("  "),
                 new Text(
                     'Crisis/Distress Lines',
