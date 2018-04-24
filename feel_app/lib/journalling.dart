@@ -45,9 +45,11 @@ class JournallingWidget extends StatelessWidget {
                       children: <Widget>[
                         new IconButton(
                             icon: new Icon(Icons.create),
+                          onPressed: () {/*...*/}
                         ),
                         new IconButton(
                           icon: new Icon(Icons.delete),
+                          onPressed: () {/*...*/}
                         ),
                       ]
                   ))

@@ -7,6 +7,7 @@ import 'package:feel_app/tracking.dart';
 import 'package:feel_app/medication.dart';
 import 'package:feel_app/contacts.dart';
 
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         '/journalling': (BuildContext context) => new JournallingWidget(),
         '/tracking': (BuildContext context) => new TrackingWidget(),
         '/medication': (BuildContext context) => new MedicationWidget(),
-        '/contacts': (BuildContext context) => new ContactsWidget(),
+        '/contacts': (BuildContext context) => new ContactsWidget()
 
 
       },
