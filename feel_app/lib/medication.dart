@@ -10,9 +10,13 @@ class MedicationWidget extends StatelessWidget {
         appBar: new AppBar(
           title: new Text("Feel"),
         ),
-        body: new Center(
-          child: new Text("Your medication reminders"),
-        ),
+        body: new ListView.builder(itemBuilder: (BuildContext context, int index){
+          if (index == 0)
+          return new ListTile(leading: new Icon(Icons.access_alarm), title: new Text("Take noon medication."));
+          if (index == 1)
+            return new ListTile(leading: new Icon(Icons.access_alarm), title: new Text("Take evening medication."),
+                subtitle: new Text("Wellbutrin 30mg"));
+        }),
         bottomNavigationBar: new FeelNavigationBar (currentIndex: 3)
             );
   }
