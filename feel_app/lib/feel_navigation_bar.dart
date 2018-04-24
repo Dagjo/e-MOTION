@@ -14,27 +14,27 @@ FeelNavigationBar ({this.currentIndex}){
             items: <BottomNavigationBarItem>[
               new BottomNavigationBarItem (
                   icon: new IconButton(icon: new Icon(Icons.home),
-                      onPressed: () => Navigator.of(context).pushNamed("/")),
+                      onPressed: () => Navigator.of(context).pushReplacementNamed("/")),
                   title: new Text("Home")
               ),
               new BottomNavigationBarItem (
                   icon: new IconButton(icon: new Icon (Icons.book),
-                      onPressed: () => Navigator.of(context).pushNamed("/journalling")),
+                      onPressed: () => Navigator.of(context).pushReplacementNamed("/journalling")),
                   title: new Text("Journal")
               ),
               new BottomNavigationBarItem (
                   icon: new IconButton(icon: new Icon (Icons.favorite),
-                      onPressed: () => Navigator.of(context).pushNamed("/tracking")),
+                      onPressed: () => Navigator.of(context).pushReplacementNamed("/tracking")),
                   title: new Text("Tracking")
               ),
               new BottomNavigationBarItem (
                   icon: new IconButton(icon: new Icon (Icons.healing),
-                    onPressed: () => Navigator.of(context).pushNamed("/medication"),),
+                    onPressed: () => Navigator.of(context).pushReplacementNamed("/medication"),),
                   title: new Text("Med")
               ),
               new BottomNavigationBarItem (
                   icon: new IconButton(icon: new Icon (Icons.chat),
-                      onPressed: () => Navigator.of(context).pushNamed ("/contacts")),
+                      onPressed: () => Navigator.of(context).pushReplacementNamed("/contacts")),
                   title: new Text("Contacts")
 
               ),
