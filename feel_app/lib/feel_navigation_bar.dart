@@ -35,7 +35,7 @@ FeelNavigationBar ({this.currentIndex}){
               new BottomNavigationBarItem (
                   icon: new IconButton(icon: new Icon (Icons.chat),
                       onPressed: () => Navigator.of(context).pushReplacementNamed("/contacts")),
-                  title: new Text("Contacts")
+                  title: new Text("Resources")
 
               ),
 

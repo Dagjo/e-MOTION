@@ -44,7 +44,7 @@ class JournallingWidget extends StatelessWidget {
                   child: new ButtonBar(
                       children: <Widget>[
                         new IconButton(
-                            icon: new Icon(Icons.create)
+                            icon: new Icon(Icons.create),
                         ),
                         new IconButton(
                           icon: new Icon(Icons.delete)
