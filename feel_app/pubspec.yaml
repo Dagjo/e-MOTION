@@ -34,6 +34,7 @@ flutter:
     - graphics/bear2.png
     - graphics/bear3.png
     - graphics/bear4.png
+    - graphics/moodgraph.png
 
   # An image asset can  refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
