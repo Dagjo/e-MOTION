@@ -11,7 +11,11 @@ class TrackingWidget extends StatelessWidget {
           title: new Text("Feel"),
         ),
         body: new Center(
-            child: new Text("This is for tracking")
+                child: new Image (
+                  image: new AssetImage("graphics/themoodgraph.png"),
+                  height: 350.0,
+                  width: 350.0,
+                )
         ),
         bottomNavigationBar: new FeelNavigationBar (currentIndex: 2)
             );
