@@ -18,7 +18,6 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
               style: new TextStyle(
               fontFamily: 'Dosis',
               fontSize:48.0,
-              fontWeight: FontWeight.bold,
               )
               ),
               new Text('Feel',
@@ -66,11 +65,11 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
                   ],
                 ),
               ),
+              new Text(" "),
               new Text("Today?",
                   style: new TextStyle(
                       fontFamily: 'Dosis',
                       fontSize:48.0,
-                      fontWeight: FontWeight.bold,
                       )
               )
             ],
