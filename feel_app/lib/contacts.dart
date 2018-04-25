@@ -53,11 +53,11 @@ class ContactsWidget extends StatelessWidget {
                 ),
                 ),
                 new Text("Edmonton"),
-                new Text("Distress Line: (24h) 780-482-HELP (4357)"),
+                new Text("Distress Line: 780-482-HELP (4357)"),
                 new Text("Crisis Response Team: 780-342-7777"),
                 new Text("  "),
                 new Text("Calgary"),
-                new Text("ConnectTeen: (24h) 403-264-TEEN (8336)"),
+                new Text("ConnectTeen: 403-264-TEEN (8336)"),
                 new Text("Distress Centre Calgary: 403-266-HELP (4357)"),
                 new Text("  "),
                 new Text(
