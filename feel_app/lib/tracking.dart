@@ -9,7 +9,7 @@ class TrackingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text("Feel"),
+          title: new Text("Feel - Mood Tracking"),
         ),
         body: new Center(
           child: new Container(

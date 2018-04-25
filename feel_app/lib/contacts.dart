@@ -10,7 +10,7 @@ class ContactsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text("Feel"),
+          title: new Text("Feel - Resources"),
         ),
         body: new Center(
           child: new Column(

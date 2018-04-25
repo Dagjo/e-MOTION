@@ -7,7 +7,7 @@ class JournallingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text("Feel"),
+          title: new Text("Feel - Journal"),
         ),
         body: new ListView.builder(
           itemBuilder: (BuildContext context, int index) {
