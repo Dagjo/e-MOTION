@@ -33,7 +33,7 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
                     new FlatButton(
                         onPressed: () { onImagePressed(context); },
                         child: new Image (
-                          image: new AssetImage("graphics/bear2.png"),
+                          image: new AssetImage("graphics/bear1.png"),
                           height: 55.0,
                           width: 55.0,
                         )
