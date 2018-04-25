@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:feel_app/feel_navigation_bar.dart';
 import 'package:feel_app/theme.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactsWidget extends StatelessWidget {
 
@@ -41,8 +41,9 @@ class ContactsWidget extends StatelessWidget {
                         fontSize:20.0,
                         fontWeight: FontWeight.bold,
                         color: FeelColors.peach[700])),
-                new FlatButton(onPressed: () => {}, child:
-                new Text("1-877-303-2642 (24/7)")),
+                new FlatButton(
+                    onPressed: _launchURL,
+                    child: new Text("1-877-303-2642 (24/7)")),
                 new Text(
                     'Crisis/Distress Lines',
                         style: new TextStyle(
@@ -82,5 +83,13 @@ class ContactsWidget extends StatelessWidget {
         ),
         bottomNavigationBar: new FeelNavigationBar (currentIndex: 4)
             );
+  }
+}
+_launchURL() async {
+  const url = 'tel:<1-403-299-7878>';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
