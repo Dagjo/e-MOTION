@@ -14,11 +14,17 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
           child: new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              new Text("How do you"),
+              new Text("How do you",
+              style: new TextStyle(
+              fontFamily: 'Dosis',
+              fontSize:48.0,
+              fontWeight: FontWeight.bold,
+              )
+              ),
               new Text('Feel',
               style: new TextStyle(
                   fontFamily: 'Dosis',
-              fontSize:32.0,
+              fontSize:72.0,
               fontWeight: FontWeight.bold,
               color: FeelColors.peach[900])),
               new Center(
@@ -60,7 +66,13 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
                   ],
                 ),
               ),
-              new Text("Today?")
+              new Text("Today?",
+                  style: new TextStyle(
+                      fontFamily: 'Dosis',
+                      fontSize:48.0,
+                      fontWeight: FontWeight.bold,
+                      )
+              )
             ],
           )
         ),
