@@ -20,9 +20,9 @@ class ContactsWidget extends StatelessWidget {
                     'Resources',
                 style: new TextStyle(
                   fontFamily: 'Dosis',
-                  fontSize: 32.0,
+                  fontSize: 40.0,
                   fontWeight: FontWeight.bold,
-                  color: FeelColors.peach[700])
+                  color: FeelColors.peach[300])
                 ),
                 new Text(" "),
                 new Text(
@@ -40,7 +40,7 @@ class ContactsWidget extends StatelessWidget {
                         fontFamily: 'Dosis',
                         fontSize:20.0,
                         fontWeight: FontWeight.bold,
-                        color: FeelColors.peach[700])),
+                        color: FeelColors.peach[300])),
                 new FlatButton(
                     onPressed: _launchURL,
                     child: new Text("1-877-303-2642 (24/7)")),
@@ -50,7 +50,7 @@ class ContactsWidget extends StatelessWidget {
                     fontFamily: 'Dosis',
                   fontSize: 20.0,
                           fontWeight: FontWeight.bold,
-                          color: FeelColors.peach[700]
+                          color: FeelColors.peach[300]
                 ),
                 ),
                 new Text("Edmonton"),
@@ -62,7 +62,7 @@ class ContactsWidget extends StatelessWidget {
                 new Text("Distress Centre Calgary: 403-266-HELP (4357)"),
                 new Text("  "),
                 new Text(
-                  'BC, ALBERTA and SASK also use',
+                  'BC, ALBERTA and SASK',
                   style: new TextStyle(
                     fontFamily: 'Dosis',
                     fontSize: 15.0,
@@ -70,12 +70,12 @@ class ContactsWidget extends StatelessWidget {
                   ),
                 ),
                 new Text(
-                  '811',
+                  'Health Link: 811',
                   style: new TextStyle(
                     fontFamily: 'Dosis',
-                    fontSize: 48.0,
+                    fontSize: 40.0,
                     fontWeight: FontWeight.bold,
-                      color: FeelColors.peach[700]
+                      color: FeelColors.peach[300]
                   ),
                 ),
               ]
