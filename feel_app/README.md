@@ -1,8 +1,7 @@
-# feel_app
+**_Technovation Judges: The source code is in the \lib directory._**
 
-How do you feel today?
+# feel 
+_by **e\*MOTION**_
 
-## Getting Started
+**_feel_** is written in [Dart](https://www.dartlang.org/), using the [flutter framework](https://flutter.io/). We use [Android Studio](https://developer.android.com/studio/index.html) as our development environment.
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
