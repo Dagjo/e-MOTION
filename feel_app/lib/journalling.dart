@@ -20,9 +20,9 @@ class JournallingWidget extends StatelessWidget {
             if (index == 3)
               return createCard (context: context, asset: "graphics/bear3.png", title: "09-10-17", subtitle: "Today was alright, no one punched me and I'm allowed back in school.");
             if (index == 4)
-              return createCard (context: context, asset: "graphics/bear3.png", title: "09-08-17", subtitle: "Today was a bad day. A bully punched me in the nose. I punched him back. Got suspended.");
+              return createCard (context: context, asset: "graphics/bear3.png", title: "09-08-17", subtitle: "Today was okay I guess. I forgot my binder at home, and I think my friends were ignoring me.");
             if (index == 5)
-              return createCard (context: context, asset: "graphics/bear4.png", title: "09-06-17", subtitle: "Today was okay I guess. I forgot my binder at home, and I think my friends were ignoring me.");
+              return createCard (context: context, asset: "graphics/bear4.png", title: "09-06-17", subtitle: "Today was a bad day. A bully punched me in the nose. I punched him back. Got suspended.");
                 }),
               bottomNavigationBar: new FeelNavigationBar(currentIndex: 1));
   }
