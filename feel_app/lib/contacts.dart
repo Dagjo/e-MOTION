@@ -29,15 +29,36 @@ class ContactsWidget extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              new Text('Mental Health Helpine',
-                  style: new TextStyle(
-                      fontFamily: 'Dosis',
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                      color: FeelColors.peach[300])),
-              new FlatButton(
-                  onPressed: _launchURL,
-                  child: new Text("1-877-303-2642 (24/7)")),
+              new Padding(
+                  padding: new EdgeInsets.symmetric(vertical: 1.0, horizontal: 10.0),
+                  child: new Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        new Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              new Text(
+                                  'Mental Health Helpine',
+                                  style: new TextStyle(
+                                      fontFamily: 'Dosis',
+                                      fontSize:20.0,
+                                      fontWeight: FontWeight.bold,
+                                      color: FeelColors.peach[300]
+                                  )
+                              ),
+                              new Text("1-877-303-2642 (24/7)")
+                            ]
+                        ),
+                        new Padding(padding: EdgeInsets.symmetric(vertical: 1.0, horizontal: 10.0),
+                            child: new FloatingActionButton(
+                              onPressed: _launchURL,
+                              child: new Icon(Icons.phone, size: 24.0),
+                            )
+                        ),
+                      ]
+                  )
+              ),
+              new Text("  "),
               new Text(
                 'Crisis/Distress Lines',
                 style: new TextStyle(
