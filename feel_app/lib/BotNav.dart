@@ -28,7 +28,7 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
                 children: <Widget>[
                   new FlatButton(
                       onPressed: () {
-                        onImagePressed(context);
+                        onImage1Pressed(context);
                       },
                       child: new Image(
                         image: new AssetImage("graphics/bear1.png"),
@@ -37,7 +37,7 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
                       )),
                   new FlatButton(
                       onPressed: () {
-                        onImagePressed(context);
+                        onImage2Pressed(context);
                       },
                       child: new Image(
                         image: new AssetImage("graphics/bear2.png"),
@@ -46,7 +46,7 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
                       )),
                   new FlatButton(
                       onPressed: () {
-                        onImagePressed(context);
+                        onImage3Pressed(context);
                       },
                       child: new Image(
                         image: new AssetImage("graphics/bear3.png"),
@@ -55,7 +55,7 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
                       )),
                   new FlatButton(
                       onPressed: () {
-                        onImagePressed(context);
+                        onImage4Pressed(context);
                       },
                       child: new Image(
                         image: new AssetImage("graphics/bear4.png"),
@@ -81,5 +81,29 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
         context: context,
         child:
             new AlertDialog(title: new Text("Thank you for your feedback!")));
+  }
+  onImage1Pressed(BuildContext context) {
+    showDialog(
+        context: context,
+        child:
+        new AlertDialog(title: new Text("Nice! Consider recording something in your journal.")));
+  }
+  onImage2Pressed(BuildContext context) {
+    showDialog(
+        context: context,
+        child:
+        new AlertDialog(title: new Text("Data entered. Thank you!")));
+  }
+  onImage3Pressed(BuildContext context) {
+    showDialog(
+        context: context,
+        child:
+        new AlertDialog(title: new Text("Data entered. Thank you!")));
+  }
+  onImage4Pressed(BuildContext context) {
+    showDialog(
+        context: context,
+        child:
+        new AlertDialog(title: new Text("Want to talk about it? Check the Resources or try a Journal entry.")));
   }
 }
