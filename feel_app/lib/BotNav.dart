@@ -76,29 +76,23 @@ class ScaffoldWithBottomNavigation extends StatelessWidget {
         bottomNavigationBar: new FeelNavigationBar(currentIndex: 0));
   }
 
-  onImagePressed(BuildContext context) {
-    showDialog(
-        context: context,
-        child:
-            new AlertDialog(title: new Text("Thank you for your feedback!")));
-  }
   onImage1Pressed(BuildContext context) {
     showDialog(
         context: context,
         child:
-        new AlertDialog(title: new Text("Nice! Consider recording something in your journal.")));
+        new AlertDialog(title: new Text("Awesome! Consider recording something in your journal.")));
   }
   onImage2Pressed(BuildContext context) {
     showDialog(
         context: context,
         child:
-        new AlertDialog(title: new Text("Data entered. Thank you!")));
+        new AlertDialog(title: new Text("Cool! Consider recording something in your journal.")));
   }
   onImage3Pressed(BuildContext context) {
     showDialog(
         context: context,
         child:
-        new AlertDialog(title: new Text("Data entered. Thank you!")));
+        new AlertDialog(title: new Text("Want to talk about it? Journal so you can remember.")));
   }
   onImage4Pressed(BuildContext context) {
     showDialog(
